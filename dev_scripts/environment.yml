@@ -1,0 +1,35 @@
+# BASH: conda env create
+# source activate wrike
+name: wrike
+channels:
+  - conda-forge
+dependencies:
+  # python
+  - pytest
+  - pytest-cov
+  - python >= 3.7
+  - tqdm
+  - beautifulsoup4
+  # pydata
+  - matplotlib
+  - numpy
+  - pandas >= 1.0.0
+  - pandas-datareader = 0.8.0
+  - scikit-learn
+  - scipy
+  - seaborn
+  - statsmodels
+  # jupyter
+  - ipykernel
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - jupyter_nbextensions_configurator
+  - jupytext
+  - nb_conda
+  - nb_conda_kernels
+  # NLP
+  - nltk
+  - SpaCy
+  # Misc
+  - pylint
+  - git
