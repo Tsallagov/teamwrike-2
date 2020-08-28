@@ -1,2 +1,12 @@
-# chatbot_help
-Example of a chatbot that can answer on frequently asked questions to technical support. Made for Wrike's Help Center (https://help.wrike.com/hc/en-us).
+# Данные
+Данные взяты из https://help.wrike.com/hc/en-us.
+# Тестирование сценариев бота
+Чтобы тестировать сценарии без запуска бота, можно воспользоваться test_model.py.
+Сообщения боту давать на вход файлу последовательно следующим образом:
+py test_model.py "/start" "i need create a task" "Yes" "Yes" "Schedule a task"
+Их колличество имеет заначение! Если ничего не изменено, то должно быть 5:
+1) Начало чата
+2) 1-ый вопрос
+3) Ответ боту на вопрос, правильно ли он ответил
+4) Ответ боту на вопрос, будет ли еще вопрос
+5) 2-ой вопрос
